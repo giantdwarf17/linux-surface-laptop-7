@@ -12,17 +12,17 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 |---------------------------|:------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NVMe                      |       ✅      |                                                                                                                                                            |
 | Graphics                  |       ✅      | Requires qcom-firmware-extract                                                                                          |
-| Backlight                 |       ❓      | Untested                                                                                                                                                   |
+| Backlight                 |       ✅      |                                                                                                                                                    |
 | USB                       |   Partially  | USB-A and USB-C ports are working. Have not tested USB over Surface Connector              |
 | USB-C display output      |       ❓      |                                                                                                                                                            |
-| Wi-Fi                     |       ❌      |         |
+| Wi-Fi                     |       ✅      | Requires kernel patch [patches/0001-wifi-rfkill-hack.patch](patches/0001-wifi-rfkill-hack.patch)        |
 | Bluetooth                 |       ❌      |                                                                                                                                                            |
 | Audio                     |       ❌      |                                                                                                                      |
 | Touchscreen               |       ❌      |                                                                                                                                                            |
 | Touchpad               |       ❌      |                                                                                                                                                            |
 | Keyboard             |       ✅      |                                                                                        |
 | Lid switch/suspend        |       ✅      | Seems to be working.                                                                                                                                       |
-| Cameras (and status LEDs) |       ❌      |                                                                                                                                                            |
+| Webcam |       ❌      |                                                                                                                                                            |
 
 > [!WARNING]
 > Without installing the firmware, many hardware components will be broken!
