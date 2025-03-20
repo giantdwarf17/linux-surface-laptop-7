@@ -30,6 +30,4 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 
 ### Firmware blobs
 
-Firmware blobs that cannot be distributed here are needed from the stock Windows installation to get certain devices working.
-
-A script to copy the blobs from an existing windows install is present in the [Ubuntu Concept image](https://launchpad.net/~ubuntu-concept/+archive/ubuntu/x1e).
+Firmware blobs that cannot be distributed here are needed from the stock Windows installation to get certain devices working. See [qcom-firmware-extract](https://git.launchpad.net/~ubuntu-concept/ubuntu/+source/qcom-firmware-extract/tree/qcom-firmware-extract?h=ubuntu#n116).
