@@ -20,7 +20,6 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 | Audio                     |       ❌      |                                                                                                                      |
 | Touchscreen               |       ❌      |                                                                                                                                                            |
 | Touchpad               |       ❌      |                                                                                                                                                            |
-| Pen                       |       ❌      |                                                                                                                                                            |
 | Keyboard             |       ✅      |                                                                                        |
 | Lid switch/suspend        |       ✅      | Seems to be working.                                                                                                                                       |
 | Cameras (and status LEDs) |       ❌      |                                                                                                                                                            |
