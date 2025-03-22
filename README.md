@@ -30,3 +30,19 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 ### Firmware blobs
 
 Firmware blobs that cannot be distributed here are needed from the stock Windows installation to get certain devices working. See [qcom-firmware-extract](https://git.launchpad.net/~ubuntu-concept/ubuntu/+source/qcom-firmware-extract/tree/qcom-firmware-extract?h=ubuntu#n116).
+
+## Tips & Tricks
+
+### Booting the image
+Attempting to boot the ubuntu-concept image will fail unless you specify the device tree in the GRUB config. 
+
+"The best way to manually boot the correct dtb would be pressing 'e' in grub when it shows the boot options and then replacing '$dtb' with 'devicetree /casper/x1e80100-microsoft-romulus13.dtb'"
+- Tobias Heider https://bugs.launchpad.net/ubuntu-concept/+bug/2084951/comments/6
+
+### Fixing Firefox crashes
+There is an issue in the Firefox snap package that causes it to crash whenever you use the scroll wheel. The workaround is to switch to the .deb version.
+
+I did so by following these instructions: https://askubuntu.com/a/1404401
+
+### Installing KDE
+This is by no means neccessary, but personally I strongly prefer KDE and have been manually switching until support is expanded to more images. This post describes how to do so correctly: https://askubuntu.com/a/1406054
