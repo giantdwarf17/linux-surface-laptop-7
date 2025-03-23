@@ -11,7 +11,7 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 | **Feature**               | **Working?** | **Notes**                                                                                                                                                  |
 |---------------------------|:------------:|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | NVMe                      |       ✅      |                                                                                                                                                            |
-| Graphics                  |       ✅      | Requires qcom-firmware-extract                                                                                          |
+| Graphics                  |       ✅      | Requires firmware                                                                                          |
 | Backlight                 |       ✅      |                                                                                                                                                    |
 | USB                       |   Partially  | USB-A and USB-C ports are working. Have not tested USB over Surface Connector              |
 | USB-C display output      |       ❓      |                                                                                                                                                            |
@@ -29,7 +29,7 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 
 ### Firmware blobs
 
-Firmware blobs that cannot be distributed here are needed from the stock Windows installation to get certain devices working. See [qcom-firmware-extract](https://git.launchpad.net/~ubuntu-concept/ubuntu/+source/qcom-firmware-extract/tree/qcom-firmware-extract?h=ubuntu#n116).
+Firmware blobs that cannot be distributed here are needed from the stock Windows installation to get certain devices working. See https://github.com/linux-surface/linux-surface/issues/1590#issuecomment-2738689008.
 
 ## Tips & Tricks
 
