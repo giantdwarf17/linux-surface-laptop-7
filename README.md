@@ -22,7 +22,8 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 | Touchpad               |       ❌      |                                                                                                                                                            |
 | Keyboard             |       ✅      |                                                                                        |
 | Lid switch/suspend        |       ✅      | Seems to be working.                                                                                                                                       |
-| Webcam |       ❌      |                                                                                                                                                            |
+| Webcam |       ❌      |                                                                                                                                      |
+| RTC |  ❌  |
 
 > [!WARNING]
 > Without installing the firmware, many hardware components will be broken!
