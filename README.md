@@ -30,7 +30,7 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 
 ### Firmware blobs
 
-Firmware blobs that cannot be distributed here are needed from the stock Windows installation to get certain devices working. See https://github.com/linux-surface/linux-surface/issues/1590#issuecomment-2738689008.
+Firmware blobs can be installed by running [romulus-firmware-extract.sh](https://github.com/giantdwarf17/linux-surface-laptop-7/blob/main/romulus-firmware-extract.sh) as root. Requires internet access and msitools.
 
 ## Tips & Tricks
 
