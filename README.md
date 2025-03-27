@@ -16,28 +16,28 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 | USB                       |   Partially  | USB-A and USB-C ports are working. Have not tested USB over Surface Connector              |
 | USB-C display output      |       ❓      |                                                                                                                                                            |
 | Wi-Fi                     |       ✅      | Requires kernel patch [patches/0001-wifi-rfkill-hack.patch](patches/0001-wifi-rfkill-hack.patch)        |
-| Bluetooth                 |       ❌      |                                                                                                                                                            |
-| Audio                     |       ❌      |                                                                                                                      |
+| Bluetooth                 |       ❌      |  [#6](https://github.com/giantdwarf17/linux-surface-laptop-7/issues/6)                                                                                                                                                          |
+| Audio                     |       ❌      |  [#2](https://github.com/giantdwarf17/linux-surface-laptop-7/issues/2) |
 | Touchscreen               |       ❌      |                                                                                                                                                            |
-| Touchpad               |       ❌      |                                                                                                                                                            |
+| Touchpad               |       ❌      |     https://github.com/giantdwarf17/linux-surface-laptop-7/issues/5            |
 | Keyboard             |       ✅      |                                                                                        |
-| Lid switch/suspend        |       ✅      | Seems to be working.                                                                                                                                       |
-| Webcam |       ❌      |                                                                                                                                                            |
+| Lid switch/suspend        |       ✅      | https://github.com/giantdwarf17/linux-surface-laptop-7/issues/7#issuecomment-2750000739                                                                                                                                      |
+| Webcam |       ❌      |     https://github.com/giantdwarf17/linux-surface-laptop-7/issues/4              |
+| RTC |  ❌  | https://github.com/giantdwarf17/linux-surface-laptop-7/issues/8 |
 
 > [!WARNING]
 > Without installing the firmware, many hardware components will be broken!
 
 ### Firmware blobs
 
-Firmware blobs that cannot be distributed here are needed from the stock Windows installation to get certain devices working. See https://github.com/linux-surface/linux-surface/issues/1590#issuecomment-2738689008.
+Firmware blobs can be installed by running [romulus-firmware-extract.sh](https://github.com/giantdwarf17/linux-surface-laptop-7/blob/main/romulus-firmware-extract.sh) as root. Requires internet access and msitools.
 
 ## Tips & Tricks
 
 ### Booting the image
 Attempting to boot the ubuntu-concept image will fail unless you specify the device tree in the GRUB config. 
 
-"The best way to manually boot the correct dtb would be pressing 'e' in grub when it shows the boot options and then replacing '$dtb' with 'devicetree /casper/x1e80100-microsoft-romulus13.dtb'"
-- Tobias Heider https://bugs.launchpad.net/ubuntu-concept/+bug/2084951/comments/6
+Press 'e' in grub when it shows the boot options and then replacing '$dtb' with 'devicetree /casper/x1e80100-microsoft-romulus13.dtb'"
 
 ### Fixing Firefox crashes
 There is an issue in the Firefox snap package that causes it to crash whenever you use the scroll wheel. The workaround is to switch to the .deb version.
@@ -46,3 +46,8 @@ I did so by following these instructions: https://askubuntu.com/a/1404401
 
 ### Installing KDE
 This is by no means neccessary, but personally I strongly prefer KDE and have been manually switching until support is expanded to more images. This post describes how to do so correctly: https://askubuntu.com/a/1406054
+
+# Credits
+* dwhinham for readme template and patches from Surface Pro 11: https://github.com/dwhinham/linux-surface-pro-11
+* qzed from linux-surface: https://github.com/linux-surface/linux-surface
+* everyone from the ubuntu-concept issue thread: https://bugs.launchpad.net/ubuntu-concept/+bug/2084951
