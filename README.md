@@ -23,7 +23,7 @@ Based on the [Ubuntu Concept image](https://discourse.ubuntu.com/t/ubuntu-24-10-
 | Keyboard             |       ✅      |                                                                                        |
 | Lid switch/suspend        |       ✅      | https://github.com/giantdwarf17/linux-surface-laptop-7/issues/7#issuecomment-2750000739                                                                                                                                      |
 | Webcam |       ❌      |     https://github.com/giantdwarf17/linux-surface-laptop-7/issues/4              |
-| RTC |  ❌  | https://github.com/giantdwarf17/linux-surface-laptop-7/issues/8 |
+| RTC |  ✅  | https://github.com/giantdwarf17/linux-surface-laptop-7/issues/8 |
 
 > [!WARNING]
 > Without installing the firmware, many hardware components will be broken!
