@@ -44,9 +44,6 @@ There is an issue in the Firefox snap package that causes it to crash whenever y
 
 I did so by following these instructions: https://askubuntu.com/a/1404401
 
-### Installing KDE
-This is by no means neccessary, but personally I strongly prefer KDE and have been manually switching until support is expanded to more images. This post describes how to do so correctly: https://askubuntu.com/a/1406054
-
 # Credits
 * dwhinham for readme template and patches from Surface Pro 11: https://github.com/dwhinham/linux-surface-pro-11
 * qzed from linux-surface: https://github.com/linux-surface/linux-surface
