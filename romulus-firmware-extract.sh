@@ -5,7 +5,7 @@ set -u  # Treat unset variables as an error
 set -o pipefail  # Catch errors in pipelines
 
 # Define paths
-device_path="microsoft/Romulus"
+device_path="microsoft/"
 firmware_dir="/lib/firmware/updates/qcom/x1e80100/${device_path}"
 tmp_dir="/tmp/surface_fw_extract"
 msi_file="${tmp_dir}/SurfaceLaptop7_ARM_Win11.msi"
